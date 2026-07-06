@@ -5,3 +5,11 @@
 [submodule "Micro-XRCE-DDS-Agent"]
 	path = Micro-XRCE-DDS-Agent
 	url = https://github.com/eProsima/Micro-XRCE-DDS-Agent.git
+[submodule "r6-weed-classifier"]
+	path = r6-weed-classifier
+	url = https://github.com/E-12-PYE-007/r6-weed-classifier
+	branch = main
+[submodule "ag_vla"]
+	path = ag_vla
+	url = https://github.com/E-12-PYE-007/ag_vla
+	branch = main

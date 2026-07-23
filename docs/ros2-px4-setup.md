@@ -11,7 +11,7 @@ This guide covers PX4 installation, as well as setup for XRCE-DDS Agent to handl
 ### 1. Clone PX4-Autopilot
 
 ```bash
-git clone https://github.com/PX4/PX4-Autopilot.git --recursive -b release/1.15
+git clone https://github.com/PX4/PX4-Autopilot.git --recursive -b release/1.17
 ```
 
 Skip this if `~/PX4-Autopilot` already exists.

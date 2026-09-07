@@ -1,0 +1,27 @@
+# REFERENCE ONLY — reconstructed from `nmcli`, not the live file.
+# Real: /etc/NetworkManager/system-connections/Hotspot.nmconnection (root:root, 0600)
+# AP for SSID 'jetsontest' on wlP1p1s0. Same SSID/iface as rover-hotspot — only one
+# can be active at a time. No static ipv4.address recorded (NM picks 10.42.0.1/24).
+
+[connection]
+id=Hotspot
+type=wifi
+interface-name=wlP1p1s0
+autoconnect=false
+
+[wifi]
+mode=ap
+ssid=jetsontest
+
+[wifi-security]
+key-mgmt=wpa-psk
+proto=rsn
+pairwise=ccmp
+group=ccmp
+psk=REDACTED
+
+[ipv4]
+method=shared
+
+[ipv6]
+method=auto

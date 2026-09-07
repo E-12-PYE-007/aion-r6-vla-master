@@ -1,0 +1,2 @@
+label,logfile,ram_peak_mb,ram_avg_mb,cpu_avg_peak_pct,cpu_avg_mean_pct,cpu_core_peak_pct,gpu_peak_pct,gpu_avg_pct,power_peak_mw,power_avg_mw
+cam_vslam,cam_vslam_20260903_200336.log,3900,3899.3,29.666666666666668,26.1,76,16,7.4,4454,4312.8

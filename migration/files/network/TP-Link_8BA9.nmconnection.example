@@ -1,0 +1,23 @@
+# REFERENCE ONLY — reconstructed from `nmcli`, not the live file.
+# Real: /etc/NetworkManager/system-connections/TP-Link_8BA9.nmconnection (root:root, 0600)
+# Site Wi-Fi client — location-specific.
+
+[connection]
+id=TP-Link_8BA9
+type=wifi
+interface-name=wlP1p1s0
+autoconnect=true
+
+[wifi]
+mode=infrastructure
+ssid=TP-Link_8BA9
+
+[wifi-security]
+key-mgmt=wpa-psk
+psk=REDACTED
+
+[ipv4]
+method=auto
+
+[ipv6]
+method=auto

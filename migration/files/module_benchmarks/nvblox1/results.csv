@@ -1,0 +1,2 @@
+label,logfile,ram_peak_mb,ram_avg_mb,cpu_avg_peak_pct,cpu_avg_mean_pct,cpu_core_peak_pct,gpu_peak_pct,gpu_avg_pct,power_peak_mw,power_avg_mw
+nvblox1,nvblox1_20260904_121822.log,4419,4417.6,59.166666666666664,53.9,81,92,62.1,7707,7032.8

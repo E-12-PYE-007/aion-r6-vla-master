@@ -1,0 +1,24 @@
+# REFERENCE ONLY — reconstructed from `nmcli`, not the live file.
+# Real: /etc/NetworkManager/system-connections/UniEquip.nmconnection (root:root, 0600)
+# Site Wi-Fi client — location-specific.
+
+[connection]
+id=UniEquip
+type=wifi
+interface-name=wlP1p1s0
+autoconnect=true
+autoconnect-priority=100
+
+[wifi]
+mode=infrastructure
+ssid=UniEquip
+
+[wifi-security]
+key-mgmt=wpa-psk
+psk=REDACTED
+
+[ipv4]
+method=auto
+
+[ipv6]
+method=auto

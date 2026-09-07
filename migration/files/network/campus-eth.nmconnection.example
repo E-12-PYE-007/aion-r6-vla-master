@@ -1,0 +1,16 @@
+# REFERENCE ONLY — reconstructed from `nmcli`, not the live file.
+# Real: /etc/NetworkManager/system-connections/campus-eth.nmconnection (root:root, 0600)
+
+[connection]
+id=campus-eth
+type=ethernet
+interface-name=enP8p1s0
+autoconnect=false
+
+[ethernet]
+
+[ipv4]
+method=auto
+
+[ipv6]
+method=auto

@@ -1,0 +1,30 @@
+# Python deps for the ag_vla sys1 edge adapter on the Jetson (jon10: JetPack 6 /
+# L4T r36.4, CUDA 12.6, Python 3.10).
+#
+# Deliberately NOT here:
+#
+#   torch, torchvision  -- installed first by setup_ag_sys1_venv.sh from the
+#       jetson-ai-lab index. PyPI's aarch64 wheels are CPU-only, and timm /
+#       efficientnet_pytorch would drag one in if they were installed first.
+#
+#   rclpy, cv_bridge    -- ROS 2 apt packages. The venv is isolated (no
+#       --system-site-packages); these resolve through PYTHONPATH once
+#       /opt/ros/humble/setup.bash is sourced.
+#
+#   transformers, tokenizers, accelerate, safetensors, sentencepiece, einops,
+#   draccus, huggingface-hub  -- sys2/prismatic deps. sys1 runs only
+#       Edge_adapter, so none are imported on the rover.
+#
+#   vint_train (editable install of AsyncVLA's visualnav-transformer)  -- no
+#       longer needed: MultiLayerDecoder_trans is vendored into the package as
+#       ag_vla/vint_self_attention.py.
+
+numpy==1.26.4
+pillow==12.2.0
+efficientnet_pytorch==0.7.1
+# cv_bridge imports cv2, which an isolated venv must provide itself.
+opencv-python-headless==4.11.0.86
+
+# --- Optional, not imported by sys1 today -------------------------------------
+# timm==0.9.10            # pulled in by prismatic upstream; Edge_adapter doesn't use it
+# eclipse-zenoh==1.9.0    # only if RMW_IMPLEMENTATION=rmw_zenoh_cpp

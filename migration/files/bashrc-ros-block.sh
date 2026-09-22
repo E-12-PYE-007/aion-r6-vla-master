@@ -8,5 +8,5 @@ source /opt/ros/humble/setup.bash
 
 # Isaac ROS dev workspace (VSLAM + nvblox run in a container under here).
 # Set even if the container is not installed yet; harmless when absent.
-export ISAAC_ROS_WS=${HOME}/workspaces/isaac_ros-dev/
+export ISAAC_ROS_WS=/home/vla-cap/vla-cap-ws/isaac-ros-ws
 # ----------------------------------------------------------------------------
